@@ -1,0 +1,27 @@
+Mall för att lägga till.  Alla image kan tas bort om ingen bild ska vara med.
+{	
+	"category" : "",
+	"description": "",
+	"image" :"",
+	"options": [
+		
+		{
+			"text" :"",
+			"is_correct" :true,
+			"image" : ""
+		},
+		{
+			"text" : "",
+			"image" : ""
+		},
+		{
+			"text" : "",
+			"image" :""
+		},
+		{
+			"text" : "",
+			"image" : ""
+		}
+		
+		]
+}

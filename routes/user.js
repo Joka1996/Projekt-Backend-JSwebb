@@ -111,21 +111,6 @@ router.put("/id=:id", async (req, res) => {
     res.json({ message: err.message });
   }
 });
-/*
-  try {
-    const user = new User(body);
-    //bcrypt för att göra hash-lösenord
-    const salt = await bcrypt.genSalt(10);
-    user.password = await bcrypt.hash(user.password, salt);
-    user.save().then((data) => {
-      res.json(data);
-      console.log("user updated");
-    });
-  } catch (err) {
-    res.json({ message: err.message });
-  }
-
-*/
 
 //radera en användare
 router.delete("/id=:id", async (req, res) => {

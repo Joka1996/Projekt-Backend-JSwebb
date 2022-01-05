@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { stringify } = require("nodemon/lib/utils");
 
-//schema required för att inte få tomma strängar i db
+//schema required för att inte få tomma strängar i db. Endast string/boolean så ingen NoSQL injection. default undefined så att det inte blir tomma strängar i databasen
 const MovieSchema = mongoose.Schema(
   {
     category: { type: String, required: true },
@@ -9,6 +9,7 @@ const MovieSchema = mongoose.Schema(
     image: {
       type: String,
       required: false,
+      default: undefined,
     },
     options: [
       {
@@ -24,6 +25,7 @@ const MovieSchema = mongoose.Schema(
         image: {
           type: String,
           required: false,
+          default: undefined,
         },
       },
     ],

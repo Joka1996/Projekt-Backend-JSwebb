@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 const movieRoute = require("./routes/movies.js");
 const historyRoute = require("./routes/history.js");
 const userRoute = require("./routes/user.js");
-
+//endpoints
 app.use("/api/movies", movieRoute);
 app.use("/api/history", historyRoute);
 app.use("/api/user", userRoute);

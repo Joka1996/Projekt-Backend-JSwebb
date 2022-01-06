@@ -10,7 +10,7 @@ require("dotenv/config");
 //variabler
 const app = express();
 
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -28,6 +28,6 @@ mongoose.connect(process.env.DB_CONNECTION, () =>
   console.log("Connected to database myQuiz")
 );
 //lokal anslutning.
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`server running on port: http://localhost:${PORT}/api/`);
 });

@@ -5,3 +5,4 @@
 #npm i body-parser\
 #npm i mongoose\
 #i package.json : start" : "nodemon app.js
+#Enpoints är /api/movies och /api/user.
